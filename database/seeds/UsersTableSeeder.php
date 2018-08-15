@@ -46,5 +46,11 @@ class UsersTableSeeder extends Seeder
         $user->avatar = 'http://larabbs.local/uploads/images/avatars/201803/03//1_1520072031_we8d6Aa8R4.png';
         $user->save();
 
+        // 初始化用户角色，将 1 号用户指派为 【站长】
+        $user->assignRole('Founder');
+
+        // 将 2 号用户指派为 【管理员】
+        $user = $userModel->find(2);
+        $user->assignRole('Maintainer');
     }
 }
