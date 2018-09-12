@@ -46,6 +46,9 @@ return array(
             'categories',
             'topics',
             'replies'
+        ],
+        '站点设置' => [
+            'settings.site',
         ]
     ],
 
