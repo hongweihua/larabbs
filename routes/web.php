@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PageController@root')->name('root');
+Route::get('/', 'PagesController@root')->name('root');
 
 // Authentication Routes...
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
@@ -39,3 +39,4 @@ Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload
 Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
 
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
+Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
