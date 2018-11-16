@@ -49,6 +49,7 @@ return array(
         ],
         '站点设置' => [
             'settings.site',
+            'links'
         ]
     ],
 
