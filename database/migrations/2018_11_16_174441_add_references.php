@@ -32,7 +32,7 @@ class AddReferences extends Migration
      */
     public function down()
     {
-        Schema::table('topic', function (Blueprint $table) {
+        Schema::table('topics', function (Blueprint $table) {
             $table->dropForeign(['user_id']);
         });
 
