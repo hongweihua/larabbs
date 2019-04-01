@@ -55,7 +55,7 @@ trait LastActivedAtHelper
         if ($datetime) {
             return new Carbon($datetime);
         } else {
-            return $this->createdAt();
+            return $this->created_at;
         }
     }
 
